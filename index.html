@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="reset.css">
+    <title>Encriptador</title>
+
+</head>
+<body>
+    <header>
+        <div class="Cabecera">
+            <img class="Cabecera_Logo" src="./Imagenes/logo.svg" alt="">
+        </div>
+    </header>
+
+    <main class="">
+        <div class="Principal">
+            <div class="Zona_texto">
+                <textarea class="Entrada_texto" id="entradaTexto" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="Area_texto">
+                    <img class="Mensaje_Importante_img" src="Imagenes/exclamacion.png" alt="Importante">
+                    <span class="Mensaje_Importante_p">Solo letras minusculas y sin acentos</span>
+                    <div class="Botones">
+                        <button class="Boton_Encriptar" id="botonEncriptador">Encriptar</button>
+                        <button class="Boton_Desencriptar" id="botonDesencriptador">Desencriptar</button>
+                    </div>
+                </div>
+            </div>  
+
+            <section class="Zona_resultados ajustes" id="zonaResultados">
+                <img class="Zona_resultados_imagen" id="imagenReferencia" src="Imagenes/referencia.png">
+                
+                    <p class="parrafo_uno ajustes" id="conversionTexto">Ningun mensaje fue encontrado</p>
+                    <p class="parrafo_dos" id="parrafoDos">Ingresa el texto que desees encriptar o desencriptar</p>
+                
+                <button class="Boton_copiar" id="botonCopiar">Copiar</button>
+            </section>
+        </div>
+    </main>
+     <script src="/Javascript/script.js"></script>
+</body>
+</html>
